@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Except these file types
+!*/
+!.gitignore
+!LICENSE
+!*.md
+!lang.json
+!*.properties
