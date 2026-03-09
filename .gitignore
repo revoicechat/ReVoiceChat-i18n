@@ -3,8 +3,12 @@
 
 # Except these file types
 !*/
-!.gitignore
+!/.gitignore
 !LICENSE
 !*.md
 !lang.json
 !*.properties
+!generate-i18n.sh
+!/.scripts/*.sh
+
+/.generated

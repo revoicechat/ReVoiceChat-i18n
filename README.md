@@ -7,11 +7,14 @@ Thank you for helping translate ReVoiceChat! This is where all translations live
 
 ## 🌐 Translation Progress
 
-| Language       | Progress |
-|----------------|----------|
-| English (`en`) | 100%     |
-| French (`fr`)  | 100%     |
-| Italian (`it`) |   0%     |
+<!-- PROGRESS_START -->
+| Language | admin-dashboard | error | frontend | login | risks | server-settings | user-settings |
+|---|---|---|---|---|---|---|---|
+| `en` | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% |
+| `fr` | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% | ✅ 100% |
+| `it` | ❌ 0% | ❌ 0% | 🟡 92% | 🟡 82% | ❌ 0% | 🟡 93% | 🟡 69% |
+
+<!-- PROGRESS_END -->
 
 Missing your language? You can add it! See below.
 
@@ -23,12 +26,13 @@ Missing your language? You can add it! See below.
 
 Translations are split into different folders, one per type of strings:
 
-| Folder      | What it covers                                                                |
-|-------------|-------------------------------------------------------------------------------|
-| `frontend/` | Everything you see in the app (buttons, messages, warnings…)                  |
-| `setting/`  | Everything you see in the settings (appareance, profile…)                     |
-| `risks/`    | Every risks/authorization of the application (voice, room, message…)          |
-| `error/`    | Every errors the backend can return (object does not exists, internal error…) |
+| Folder             | What it covers                                                                |
+|--------------------|-------------------------------------------------------------------------------|
+| `frontend/`        | Everything you see in the app (buttons, messages, warnings…)                  |
+| `user-settings/`   | Everything you see in the server settings (emote, roles, structure…)          |
+| `server-settings/` | Everything you see in the user settings (appareance, profile…)                |
+| `risks/`           | Every risks/authorization of the application (voice, room, message…)          |
+| `error/`           | Every errors the backend can return (object does not exists, internal error…) |
 
 Each folder contains one file per language, named with its language code:  
 
@@ -49,6 +53,8 @@ frontend/en.properties  →  frontend/pt.properties   (for Portuguese)
 ```
 
 > Language codes follow the [ISO 639-1 standard](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes): `fr`, `es`, `de`, `pt`, `ja`, `zh`…
+
+> You can also generate all the files empty (with just the keys) using `./.scripts/.scripts/new-lang.sh ${lang}` 
 
 ### 3 — Translate the file
 
